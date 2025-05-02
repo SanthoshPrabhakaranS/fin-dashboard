@@ -48,7 +48,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     ) => {
       return a.monthlyExpenses - b.monthlyExpenses;
     },
-    width: 150,
+    width: 160,
   },
   {
     title: "Credit Score",
@@ -71,7 +71,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     ) => {
       return a.outstandingLoans - b.outstandingLoans;
     },
-    width: 140,
+    width: 170,
   },
   {
     title: "Account Balance",
@@ -81,7 +81,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     sorter: (a: { accountBalance: number }, b: { accountBalance: number }) => {
       return a.accountBalance - b.accountBalance;
     },
-    width: 140,
+    width: 160,
   },
   {
     title: "Credit Risk",
