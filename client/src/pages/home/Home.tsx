@@ -1,4 +1,4 @@
-import { Col, Flex, Row } from "antd";
+import { Col, Flex, Row, Typography } from "antd";
 import Container from "../../components/container";
 import { useGetAllCustomers } from "../../services/apis/useGetAllCustomers";
 import IncomeExpenseChart from "../../components/income-expense-chart";
@@ -122,7 +122,15 @@ const Home = () => {
       <Row className="pb-[2rem]" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         <Col className="gutter-row" span={24}>
           <Flex align="center" justify="space-between">
-            <h1 className="text-xl font-medium w-full">Users List</h1>
+            <Typography
+              style={{
+                fontSize: "20px",
+                width: "100%",
+                fontWeight: 500,
+              }}
+            >
+              Users List
+            </Typography>
             <Search handleOnSearch={onChange} search={search} />
           </Flex>
           <UsersTable

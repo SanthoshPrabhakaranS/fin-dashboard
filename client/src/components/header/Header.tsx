@@ -1,12 +1,26 @@
+import { Flex, Typography } from "antd";
 import Container from "../container";
+import ThemeToggle from "../theme-toggle";
 
 const Header = () => {
   return (
-    <header className="h-[60px] sticky top-0 z-20 w-full flex items-center bg-blue-900 text-white">
-      <Container className="flex items-center h-full">
-        <p className="font-bold text-xl pt-[1rem]">Dashboard</p>
+    <Flex className="h-[60px] sticky top-0 z-20 w-full flex items-center bg-blue-900 text-white">
+      <Container>
+        <Flex justify="space-between">
+          <Typography
+            style={{
+              fontSize: "20px",
+              fontWeight: 500,
+              color: "white",
+            }}
+          >
+            Dashboard
+          </Typography>
+
+          <ThemeToggle />
+        </Flex>
       </Container>
-    </header>
+    </Flex>
   );
 };
 

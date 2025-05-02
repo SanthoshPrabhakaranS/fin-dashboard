@@ -11,3 +11,5 @@ export interface CustomerType {
 }
 
 export type reviewStatus = "Review" | "Approved" | "Rejected";
+
+export type ThemeMode = "dark" | "default";

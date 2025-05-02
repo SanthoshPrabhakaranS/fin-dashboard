@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button, Flex, Typography } from "antd";
 import { FC } from "react";
 
 interface ErrorContainerProps {
@@ -8,12 +8,18 @@ interface ErrorContainerProps {
 
 const ErrorContainer: FC<ErrorContainerProps> = ({ refetchFunction, text }) => {
   return (
-    <div className="flex justify-center items-center h-[500px] flex-col gap-2">
-      <p className="text-xl">{text}</p>
+    <Flex className="flex justify-center items-center h-[100vh] flex-col gap-2">
+      <Typography
+        style={{
+          fontSize: "20px",
+        }}
+      >
+        {text}
+      </Typography>
       <Button type="primary" onClick={refetchFunction}>
         Reload
       </Button>
-    </div>
+    </Flex>
   );
 };
 

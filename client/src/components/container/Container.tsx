@@ -1,3 +1,4 @@
+import { Space } from "antd";
 import { FC } from "react";
 
 interface ContainerProps {
@@ -7,11 +8,12 @@ interface ContainerProps {
 
 const Container: FC<ContainerProps> = ({ children, className }) => {
   return (
-    <div
-      className={`w-full max-w-[1400px] mx-auto px-[16px] md:px-[1.5rem] ${className}`}
+    <Space
+      direction="vertical"
+      className={`w-full max-w-[1400px] mx-auto flex px-[16px] md:px-[1.5rem] ${className}`}
     >
       {children}
-    </div>
+    </Space>
   );
 };
 
