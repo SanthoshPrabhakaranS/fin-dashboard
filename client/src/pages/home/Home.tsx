@@ -96,10 +96,26 @@ const Home = () => {
   return (
     <Container>
       <Row className="py-[2rem]" gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-        <Col className="gutter-row" span={12}>
+        <Col
+          className="gutter-row mb-4"
+          span={12}
+          xs={24}
+          sm={24}
+          md={12}
+          lg={12}
+          xl={12}
+        >
           <IncomeExpenseChart data={data} />
         </Col>
-        <Col className="gutter-row" span={12}>
+        <Col
+          className="gutter-row"
+          span={12}
+          xs={24}
+          sm={24}
+          md={12}
+          lg={12}
+          xl={12}
+        >
           <RiskScoreChart data={data} />
         </Col>
       </Row>

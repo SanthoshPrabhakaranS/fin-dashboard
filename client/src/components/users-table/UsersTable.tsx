@@ -11,7 +11,12 @@ interface UsersTableProps {
 const UsersTable: FC<UsersTableProps> = ({ data, onClickDropdown }) => {
   return (
     <div>
-      <Table dataSource={data} columns={getColumns({ onClickDropdown })} />
+      <Table
+        className="whitespace-nowrap"
+        virtual
+        dataSource={data}
+        columns={getColumns({ onClickDropdown })}
+      />
     </div>
   );
 };

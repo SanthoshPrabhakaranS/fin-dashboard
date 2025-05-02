@@ -18,11 +18,14 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
       const numB = parseInt(b.customerId.replace(/\D/g, ""), 10);
       return numA - numB;
     },
+    fixed: "left" as const,
+    width: 140,
   },
   {
     title: "Name",
     dataIndex: "name",
     key: "name",
+    width: 140,
   },
   {
     title: "Monthly Income",
@@ -32,6 +35,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     sorter: (a: { monthlyIncome: number }, b: { monthlyIncome: number }) => {
       return a.monthlyIncome - b.monthlyIncome;
     },
+    width: 150,
   },
   {
     title: "Monthly Expenses",
@@ -44,6 +48,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     ) => {
       return a.monthlyExpenses - b.monthlyExpenses;
     },
+    width: 150,
   },
   {
     title: "Credit Score",
@@ -53,6 +58,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
       compare: (a: { creditScore: number }, b: { creditScore: number }) =>
         a.creditScore - b.creditScore,
     },
+    width: 140,
   },
   {
     title: "Outstanding Loans",
@@ -65,6 +71,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     ) => {
       return a.outstandingLoans - b.outstandingLoans;
     },
+    width: 140,
   },
   {
     title: "Account Balance",
@@ -74,6 +81,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
     sorter: (a: { accountBalance: number }, b: { accountBalance: number }) => {
       return a.accountBalance - b.accountBalance;
     },
+    width: 140,
   },
   {
     title: "Credit Risk",
@@ -85,6 +93,7 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
         </div>
       );
     },
+    width: 140,
   },
   {
     title: "Status",
@@ -113,5 +122,6 @@ export const getColumns = ({ onClickDropdown }: ColumnsProps) => [
         </Space>
       </Dropdown>
     ),
+    width: 140,
   },
 ];
