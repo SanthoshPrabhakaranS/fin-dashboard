@@ -34,16 +34,13 @@ project-root/
 ### 1. Install dependencies
 
 ```bash
-pnpm install
-
-```
-
-```bash
 cd client
+pnpm install
 pnpm run dev
 ```
 
 ```bash
 cd backend
+npm install
 npm run dev
 ```
