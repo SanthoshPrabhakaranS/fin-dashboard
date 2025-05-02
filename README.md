@@ -17,7 +17,7 @@ This project is a fullstack starter using **Vite** for the frontend and **Expres
 
 project-root/
 ├── client/ # Frontend - Vite React app
-├── server/ # Backend - Node.js Express app
+├── backend/ # Backend - Node.js Express app
 └── README.md
 
 ---
