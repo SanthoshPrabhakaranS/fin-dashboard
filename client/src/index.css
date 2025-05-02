@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import 'antd/dist/reset.css';
+
+@layer base {
+  *, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+}
+
+.ant-table
+  .ant-table-container
+  .ant-table-content
+  table
+  thead.ant-table-thead
+  .ant-table-cell {
+  background-color: #1c398e;
+  color: white;
+}
